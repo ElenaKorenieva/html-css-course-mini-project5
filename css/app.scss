@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: 'Custom-Font';
+    src: url()
+}
+
+@import "variables";
+
+html, body {
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: $bg-base;
+}
+
+header {
+    font-size: 1.5rem;
+    background: black;
+    color: $color-white;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile-container {
+    display: flex;
+    align-items: center;
+    width: 46%;
+}
+
+.tile {
+    display: flex;
+    position: relative;
+    background: $color-white;
+    border-radius: 0.5rem;
+    width:  90%;
+    margin: 1rem auto;
+
+    .tile-img {
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 5px solid red;
+
+        .wrap-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0.5rem;
+
+            img {
+                max-width: 85%;
+                max-height: 85%;
+            }
+        }
+    }
+
+    .tile-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 80px;
+        margin-left: 1rem;
+
+        .tile-description__text1 {
+            color: rgb(160, 18, 18);
+        }
+        
+        .tile-description__text2 {
+            color: darkorange;
+        }
+        
+        .tile-description__text3 {
+            color: darkslateblue;
+        }
+        
+        .tile-description__text4 {
+            color: darkturquoise;
+        }
+    }
+
+    .tile-line1 {
+        position: absolute;
+        border: $border rgb(160, 18, 18);
+        width: 48%;
+        border-radius: $border_radius;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .tile-line2 {
+        position: absolute;
+        border: $border darkorange;
+        width: 75%;
+        border-radius: $border_radius;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .tile-line3 {
+        position: absolute;
+        border: $border darkslateblue;
+        width: 87%;
+        border-radius: $border_radius;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .tile-line4 {
+        position: absolute;
+        border: $border darkturquoise;
+        width: 45%;
+        border-radius: $border_radius;
+        bottom: 0;
+        left: 0;
+    }
+}

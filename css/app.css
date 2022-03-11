@@ -1,0 +1,89 @@
+html, body {
+  font-size: 16px;
+  margin: 0;
+  height: 100%; }
+
+body {
+  background: #d3e5f1; }
+
+header {
+  font-size: 1.5rem;
+  background: black;
+  color: #FFFFFF; }
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tile-container {
+  display: flex;
+  align-items: center;
+  min-width: 46%; }
+
+.tile {
+  display: flex;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  width: 90%;
+  margin: 1rem auto; }
+  .tile .tile-img {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid red; }
+    .tile .tile-img .wrap-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0.5rem; }
+      .tile .tile-img .wrap-img img {
+        max-width: 85%;
+        max-height: 85%; }
+  .tile .tile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+    margin-left: 1rem; }
+    .tile .tile-description .tile-description__text1 {
+      color: #a01212; }
+    .tile .tile-description .tile-description__text2 {
+      color: darkorange; }
+    .tile .tile-description .tile-description__text3 {
+      color: darkslateblue; }
+    .tile .tile-description .tile-description__text4 {
+      color: darkturquoise; }
+  .tile .tile-line1 {
+    position: absolute;
+    border: 5px solid #a01212;
+    width: 48%;
+    border-radius: 0.5rem 0.5rem 0.8rem 0.8rem;
+    bottom: 0;
+    left: 0; }
+  .tile .tile-line2 {
+    position: absolute;
+    border: 5px solid darkorange;
+    width: 75%;
+    border-radius: 0.5rem 0.5rem 0.8rem 0.8rem;
+    bottom: 0;
+    left: 0; }
+  .tile .tile-line3 {
+    position: absolute;
+    border: 5px solid darkslateblue;
+    width: 87%;
+    border-radius: 0.5rem 0.5rem 0.8rem 0.8rem;
+    bottom: 0;
+    left: 0; }
+  .tile .tile-line4 {
+    position: absolute;
+    border: 5px solid darkturquoise;
+    width: 45%;
+    border-radius: 0.5rem 0.5rem 0.8rem 0.8rem;
+    bottom: 0;
+    left: 0; }
+
+/*# sourceMappingURL=app.css.map */
